@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Waste2Value</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-dashboard">
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <div class="sidebar-brand">
+          <span>♻️</span>
+          <span>Waste2Value</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="profile.html">Profile</a>
+          <a href="report.html">Report Waste</a>
+          <a href="recyclers.html">Find Recyclers</a>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="index.html">Home</a>
+        </nav>
+
+        <div class="sidebar-card">
+          <p class="small-label">Your EcoPoints</p>
+          <strong>1820</strong>
+          <div class="mini-progress">
+            <div class="progress-fill" style="width: 73%"></div>
+          </div>
+          <p class="progress-label">Next badge at 2500</p>
+        </div>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="dashboard-topbar">
+          <h1>Dashboard</h1>
+          <div class="topbar-actions">
+            <button class="btn btn-primary" type="button">
+              + Report Waste
+            </button>
+            <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode">🌙</button>
+          </div>
+        </div>
+
+        <div class="stats-grid dashboard-grid">
+          <div class="stats-card">
+            <strong id="statsReports">12</strong>
+            <small>Reports Submitted</small>
+          </div>
+
+          <div class="stats-card">
+            <strong id="statsRecycled">46.5</strong>
+            <small>KG Recycled</small>
+          </div>
+
+          <div class="stats-card">
+            <strong id="statsPickups">7</strong>
+            <small>Pickup Requests</small>
+          </div>
+
+          <div class="stats-card">
+            <strong id="statsPoints">1820</strong>
+            <small>EcoPoints Earned</small>
+          </div>
+        </div>
+
+        <div class="panel-card">
+          <div class="panel-header">
+            <h2>Recent Activity</h2>
+            <a href="#" style="color: var(--muted); font-weight: 600;">View All</a>
+          </div>
+          <ul class="activity-list" id="activityList">
+            <li>
+              <strong>Plastic waste reported</strong>
+              <span>2 hours ago</span>
+            </li>
+            <li>
+              <strong>Pickup completed</strong>
+              <span>1 day ago</span>
+            </li>
+            <li>
+              <strong>Badge earned: Green Contributor</strong>
+              <span>3 days ago</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="impact-panel">
+          <div class="panel-header">
+            <h2>Your Impact</h2>
+            <span style="color: var(--primary); font-weight: 700;">73%</span>
+          </div>
+          <p style="color: var(--muted); margin-bottom: 12px;">Progress to Eco Champion rank</p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 73%"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
