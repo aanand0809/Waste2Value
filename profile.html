@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard | Waste2Value</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-leaderboard">
+    <header class="site-header inner-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Waste2Value home">
+          <span class="brand-mark">♻️</span>
+          <span>Waste2Value</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="report.html">Report Waste</a>
+          <a href="recyclers.html">Recyclers</a>
+          <a href="profile.html">Profile</a>
+          <a href="dashboard.html" class="btn btn-primary nav-cta">Dashboard</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main class="page-container">
+      <section class="section leaderboard-section">
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="eyebrow text-green">Leaderboard</span>
+            <h1>Community champions</h1>
+          </div>
+
+          <div class="leaderboard-tabs" role="tablist" aria-label="Leaderboard tabs">
+            <button class="leaderboard-tab active" type="button" data-tab="global">Global</button>
+            <button class="leaderboard-tab" type="button" data-tab="college">College</button>
+            <button class="leaderboard-tab" type="button" data-tab="community">Community</button>
+          </div>
+
+          <div id="leaderboardTop" class="leaderboard-top"></div>
+
+          <div class="leaderboard-table-wrap">
+            <table class="leaderboard-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Name</th>
+                  <th>City</th>
+                  <th>Waste Recycled</th>
+                  <th>EcoPoints</th>
+                </tr>
+              </thead>
+              <tbody id="leaderboardBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

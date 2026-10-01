@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Waste2Value</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-profile">
+    <header class="site-header inner-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Waste2Value home">
+          <span class="brand-mark">♻️</span>
+          <span>Waste2Value</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="report.html">Report Waste</a>
+          <a href="recyclers.html">Recyclers</a>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="dashboard.html" class="btn btn-primary nav-cta">Dashboard</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main class="page-container">
+      <section class="section profile-wrap">
+        <div class="container profile-grid">
+          <aside class="profile-card summary-profile">
+            <div class="avatar">AK</div>
+            <h1 id="profileName">Anand Kumar</h1>
+            <p id="profileCity" class="city">Bengaluru</p>
+            <div class="profile-score">
+              <span>EcoPoints</span>
+              <strong id="profileEcoPoints">1820</strong>
+            </div>
+            <div class="profile-score">
+              <span>Rank</span>
+              <strong id="profileRank">Eco Champion</strong>
+            </div>
+          </aside>
+
+          <div class="profile-main">
+            <div class="profile-stats">
+              <div class="mini-stat">
+                <span>Reports</span>
+                <strong id="profileReports">12</strong>
+              </div>
+              <div class="mini-stat">
+                <span>Recycled KG</span>
+                <strong id="profileRecycled">46.5</strong>
+              </div>
+              <div class="mini-stat">
+                <span>Pickup Requests</span>
+                <strong id="profilePickups">7</strong>
+              </div>
+              <div class="mini-stat">
+                <span>EcoPoints</span>
+                <strong id="profileStatsPoints">1820</strong>
+              </div>
+            </div>
+
+            <div class="badges-block">
+              <h2>Badges</h2>
+              <div class="badge-list">
+                <span>♻️ Recycling Starter</span>
+                <span>🌱 Green Contributor</span>
+                <span>🏆 Eco Champion</span>
+              </div>
+            </div>
+
+            <div class="badge-progress">
+              <div class="panel-header">
+                <h2>Next badge progress</h2>
+                <span>73%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 73%"></div></div>
+            </div>
+
+            <form id="profileForm" class="profile-form" novalidate>
+              <h2>Edit Profile</h2>
+
+              <div class="field-grid">
+                <div class="field-group">
+                  <label for="editName">Name</label>
+                  <input id="editName" name="name" type="text" required />
+                </div>
+
+                <div class="field-group">
+                  <label for="editCity">City</label>
+                  <input id="editCity" name="city" type="text" required />
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="editBio">Bio</label>
+                <textarea id="editBio" name="bio" rows="4" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

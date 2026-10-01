@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Waste | Waste2Value</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-report">
+    <header class="site-header inner-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Waste2Value home">
+          <span class="brand-mark">♻️</span>
+          <span>Waste2Value</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="recyclers.html">Recyclers</a>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="profile.html">Profile</a>
+          <a href="dashboard.html" class="btn btn-primary nav-cta">Dashboard</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Toggle light and dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main class="page-container">
+      <section class="section form-wrap">
+        <div class="container form-shell">
+          <div class="form-intro">
+            <span class="eyebrow text-green">Report Waste</span>
+            <h1>Make your waste count.</h1>
+            <p>Submit recyclable material details and turn your action into measurable community impact.</p>
+          </div>
+
+          <form id="reportForm" class="waste-form" novalidate>
+            <div class="field-grid">
+              <div class="field-group">
+                <label for="category">Waste Category</label>
+                <select id="category" name="category" required>
+                  <option value="">Select category</option>
+                  <option value="Plastic">Plastic</option>
+                  <option value="Paper">Paper</option>
+                  <option value="Metal">Metal</option>
+                  <option value="Glass">Glass</option>
+                  <option value="E-Waste">E-Waste</option>
+                  <option value="Organic">Organic</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="quantity">Quantity (KG)</label>
+                <input id="quantity" name="quantity" type="number" min="0.1" step="0.1" placeholder="e.g. 5" required />
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="location">Location</label>
+              <input id="location" name="location" type="text" placeholder="Your locality or collection point" required />
+            </div>
+
+            <div class="field-group">
+              <label for="description">Description</label>
+              <textarea id="description" name="description" rows="4" placeholder="Describe the waste type and material condition" required></textarea>
+            </div>
+
+            <div class="field-group">
+              <label for="imageUpload">Image Upload</label>
+              <input id="imageUpload" name="imageUpload" type="file" accept="image/*" />
+            </div>
+
+            <div class="points-box" aria-live="polite">
+              <span>Estimated EcoPoints</span>
+              <strong id="estimatedPoints">+0</strong>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit Report</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

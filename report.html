@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Waste2Value</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-dashboard">
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <div class="sidebar-brand">
+          <span class="brand-mark">♻️</span>
+          <span>Waste2Value</span>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Dashboard navigation">
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="report.html">Report Waste</a>
+          <a href="report.html#my-reports">My Reports</a>
+          <a href="recyclers.html">Find Recyclers</a>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+
+        <div class="sidebar-card">
+          <p class="small-label">Eco goal</p>
+          <strong>50 KG</strong>
+          <div class="mini-progress"><span></span></div>
+        </div>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <div>
+            <p class="eyebrow text-green">Dashboard</p>
+            <h1>Welcome back, Eco Warrior 🌱</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
+            <a href="index.html" class="btn btn-secondary">Home</a>
+          </div>
+        </header>
+
+        <section class="stats-grid dashboard-grid" aria-label="Summary statistics">
+          <article class="stats-card">
+            <span class="small-label">EcoPoints</span>
+            <strong id="dashboard-ecopoints">0</strong>
+            <small>+12% this week</small>
+          </article>
+
+          <article class="stats-card">
+            <span class="small-label">Waste Reported</span>
+            <strong id="dashboard-reported">0 KG</strong>
+            <small>Across 4 reports</small>
+          </article>
+
+          <article class="stats-card">
+            <span class="small-label">Waste Recycled</span>
+            <strong id="dashboard-recycled">0 KG</strong>
+            <small>Collected locally</small>
+          </article>
+
+          <article class="stats-card">
+            <span class="small-label">CO₂ Saved</span>
+            <strong id="dashboard-co2">0 KG</strong>
+            <small>Compared to landfill</small>
+          </article>
+        </section>
+
+        <section class="impact-panel">
+          <div class="panel-header">
+            <h2>Your Environmental Impact</h2>
+            <span id="impact-amount">0 KG recycled</span>
+          </div>
+          <div class="progress-track" aria-label="Progress toward goal">
+            <div id="impact-progress" class="progress-fill"></div>
+          </div>
+          <p class="progress-label">Progress toward <strong>50 KG goal</strong></p>
+        </section>
+
+        <section class="activity-grid">
+          <article class="panel-card activity-card">
+            <div class="panel-header">
+              <h2>Recent Activity</h2>
+            </div>
+            <ul id="activity-list" class="activity-list"></ul>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
